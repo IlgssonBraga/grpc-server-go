@@ -18,6 +18,7 @@ func main()  {
 	}
 
 	grpcServer := grpc.NewServer()
+	
 	// pb.RegisterUserServiceServer(grpcServer, services.NewUserService())
 	pb.RegisterUserServiceServer(grpcServer, services.NewUserService())
 	reflection.Register(grpcServer)
